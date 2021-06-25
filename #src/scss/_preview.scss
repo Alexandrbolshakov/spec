@@ -1,0 +1,78 @@
+.preview{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;        
+        min-height: 766px;
+        align-items: center;
+    }
+    &__content{
+        flex: 0 1 60%;
+        display: flex;
+        flex-direction: column;
+        &-title{
+            font-family: 'Montserrat';
+            @include adaptive-font(40, 24);
+            font-weight: 700;
+            color: $blue;
+        }
+        &-subtitle{
+            color: #000;
+            font-family: 'Montserrat';
+            @include adaptive-font(40, 24);
+            font-weight: 700;
+            line-height: 60 / 40 *100%;
+            margin-bottom: 12px;
+        }
+        &-descr{
+            color: #494949;
+            @include adaptive-font(20, 14);
+            font-weight: 400;
+            line-height: 35 / 20 * 100%;
+        }
+        &-logo{
+            @include adaptive-font(20, 14);
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        &-text{
+            @include adaptive-font(20, 14);
+            color: #494949;
+            font-weight: 400;
+            line-height: 35 / 20 *100%;
+            margin-bottom: 27px;
+        }
+        &-btn{
+            color: #fff;
+            background-color: $blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 280px;
+            height: 74px;
+            @include adaptiv-value('width', 280, 270, 1);
+            @include adaptiv-value('height', 74, 59, 1);
+            @include adaptive-font(20, 17);
+            font-weight: 700;
+            box-shadow: -3px 4px 0px #0E518C;
+            border-radius: 10px;
+            transition: all 0.3s;
+            &:hover{
+                background-color: #154874;
+            }
+        }
+    }
+    &__photo{
+        flex: 0 1 40%;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__divider{
+        width: 100%;
+        @include adaptiv-value('height', 259, 50, 1);
+        margin-top: -200px;
+        background: url("../img/preview/Line.png") center center/cover no-repeat;
+    }
+}

@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('../fonts/icons.woff?jguf4w') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-page:before {
+  content: "\e90d";
+  font-size: 30px;
+  color: #808080;
+  position: absolute;
+  top: 21px;
+  left: 22px;
+}
+.icon-adv:before {
+  content: "\e90e";
+  font-size: 30px;
+  color: #808080;
+  position: absolute;
+  top: 21px;
+  left: 19px;
+}
+.icon-call:before {
+  content: "\e90f";
+  font-size: 30px;
+  color: #808080;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+}
+.icon-card:before {
+  content: "\e913";
+  font-size: 30px;
+  color: #808080;
+  position: absolute;
+  top: 21px;
+  left: 19px;
+}
+.icon-cart2:before {
+  content: "\e910";
+  font-size: 30px;
+  color: #808080;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+}
+.icon-def:before {
+  content: "\e916";
+  font-size: 30px;
+  color: #808080;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  z-index: 1;
+}
+.icon-phone:before {
+  content: "\e914";
+  font-size: 30px;
+  color: #808080;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+}
+.icon-scale:before {
+  content: "\e915";
+  font-size: 30px;
+  color: #808080;
+  position: absolute;
+  top: 21px;
+  left: 26px;
+}
+.icon-shevron:before {
+  content: "\e917";
+  font-size: 10px;
+  color: #4F4F4F;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.icon-mail:before {
+  content: "\ea84";
+  position: absolute;
+  color: #808080;
+  font-size: 18px;
+  top: 5px;
+  left: -35px;
+}

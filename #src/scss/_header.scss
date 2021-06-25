@@ -1,0 +1,20 @@
+.header{
+    @include adaptiv-value('padding-top', 95, 27, 1);
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        @include adaptive-font(25, 18);
+        font-weight: 700;
+        color: $blue;
+        span{
+            color: #fff;
+            background-color: $blue;
+            height: 37px;
+            width: 153px;
+            padding: 0 0 5px 5px;
+            line-height: 0;
+        }
+    }
+}

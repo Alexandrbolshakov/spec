@@ -1,0 +1,28 @@
+.getout{
+    &__item{
+        @include adaptive-font(20, 14);
+        line-height: 35 / 20 * 100%;
+        font-weight: 400;
+        position: relative;
+        &:before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            transform: translateY(-50%);
+        }
+    }
+    &__list{
+        width: 60%;
+    }
+    &__divider{
+        width: 100%;
+        @include adaptiv-value('height', 259, 50, 1);
+        margin-top: -80px;
+        background: url("../img/preview/Line.png") center center/cover no-repeat;
+    }
+}

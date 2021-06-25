@@ -1,0 +1,25 @@
+.footer{
+    padding: 40px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        @include adaptive-font(20, 14);
+        line-height: 23 / 20 * 100%;
+        color: #4E4E4E;
+        font-weight: 400;
+        &:not(:last-child){
+            @include adaptiv-value('margin-right',126, 75, 1);
+        }
+        position: relative;
+    }
+}
+.footer__item.icon-phone::before{
+    position: absolute;
+    color: #808080;
+    font-size: 18px;
+    top: 5px;
+    left: -35px;
+}
