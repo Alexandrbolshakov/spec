@@ -191,6 +191,7 @@ li {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding: 0 10px;
 }
 
 .header {
@@ -249,7 +250,6 @@ li {
 .preview__content-title {
   font-family: 'Montserrat';
   font-weight: 700;
-  color: #3174AF;
 }
 
 .preview__content-subtitle {
@@ -669,6 +669,8 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -676,16 +678,15 @@ li {
 }
 
 .form__body-left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-  margin-right: 44px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
 }
 
 .form__body-right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
 }
 
 .form__body:after {
@@ -968,7 +969,7 @@ textarea.form__input {
   position: absolute;
   color: #808080;
   font-size: 18px;
-  top: 5px;
+  top: 0;
   left: -35px;
 }
 
@@ -1202,8 +1203,8 @@ textarea.form__input {
   .form__body-left,
   .form__body-right {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 1fr;
-            flex: 0 1 1fr;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 
   .form__body-left {

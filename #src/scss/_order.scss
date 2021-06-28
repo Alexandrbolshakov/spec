@@ -92,14 +92,14 @@
     &__body{
         position: relative;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 30px;
         &-left{
-            flex: 1 1 50%;
-            margin-right: 44px;
+            flex: 0 1 48%;
         }
         &-right{
-            flex: 1 1 50%;
+            flex: 0 1 48%;
         }
         &:after{
             content: "";
@@ -301,3 +301,4 @@ textarea.form__input{
     transform: translateY(0);
     height: 100%;
 }
+

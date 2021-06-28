@@ -4,7 +4,14 @@
         <div class="order__subtile">Как только мы активируем ваш аккаунт, вы сможете <span>приступить к заказам</span></div>
         <div class="wrapper">
             <div class="form">
-                <form action="#" id="form" class="form__body">
+                <form action="#" data-ajax id="form" class="form__body" method="POST">
+
+                                <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="My site" class="order__form-hidden">
+                    <input type="hidden" name="admin_email" value="example@gmail.com" class="order__form-hidden">
+                    <input type="hidden" name="form_subject" value="Form Subject" class="order__form-hidden">
+                    <!-- END Hidden Required Fields -->
+
                     <div class="form__body-left">
                         <div class="form__item">
                             <input type="text" id="formName" name="name" class="form__input _req" placeholder="ФИО">
@@ -20,63 +27,63 @@
                             <input type="text" id="formName" name="yandex" class="form__input" placeholder="Яндекс услуги">
                         </div>
                         <div class="form__item">
-                            <input type="text" id="formName" name="name" class="form__input" placeholder="Авито">
+                            <input type="text" id="formName" name="Avito" class="form__input" placeholder="Авито">
                         </div>
                         <div class="form__item">
-                            <input type="text" id="formName" name="name" class="form__input" placeholder="Группа в ВК">
+                            <input type="text" id="formName" name="VK" class="form__input" placeholder="Группа в ВК">
                         </div>
                         <div class="form__item">
-                            <input type="text" id="formName" name="name" class="form__input" placeholder="Группа в фейсбуке">
+                            <input type="text" id="formName" name="Facebook" class="form__input" placeholder="Группа в фейсбуке">
                         </div>
                         <div class="form__item">
-                            <input type="text" id="formName" name="name" class="form__input" placeholder="Инстаграмм ">
+                            <input type="text" id="formName" name="Instagramm" class="form__input" placeholder="Инстаграмм ">
                         </div>
                         <div class="form__item">
-                            <input type="text" id="formName" name="name" class="form__input" placeholder="Сайт ">
+                            <input type="text" id="formName" name="Site" class="form__input" placeholder="Сайт ">
                         </div>
                     </div>
                     <div class="form__body-right">
                         <div class="form__item">
-                            <input type="text" id="formName" name="name" class="form__input _req" placeholder="Телефон">
+                            <input type="text" id="formName" name="phone" class="form__input _req" placeholder="Телефон">
                         </div>
                         <div class="form__item">
-                            <input type="text" id="formName" name="name" class="form__input _req" placeholder="Регион работы">
+                            <input type="text" id="formName" name="region" class="form__input _req" placeholder="Регион работы">
                         </div>
                         <div class="form__item">
                             <div class="form__label form__title">Статус</div>
                             <div class="options">
                                 <div class="options__item">
-                                    <input id="owner" checked type="radio" value="right" name="hand" class="options__input">
+                                    <input id="owner"  type="radio" value="owner" name="owner" class="options__input">
                                     <label for="owner" class="options__label"><span>Частный мастер</span></label>
                                 </div>
                                 <div class="options__item">
-                                    <input id="freelance" type="radio" value="left" name="hand" class="options__input">
+                                    <input id="freelance" type="radio" value="freelance" name="freelance" class="options__input">
                                     <label for="freelance" class="options__label"><span>Самозанятый</span></label>
                                 </div>
                                 <div class="options__item">
-                                    <input id="ip" checked type="radio" value="right" name="hand" class="options__input">
+                                    <input id="ip"  type="radio" value="ip" name="ip" class="options__input">
                                     <label for="ip" class="options__label"><span>ИП</span></label>
                                 </div>
                                 <div class="options__item">
-                                    <input id="ooo" type="radio" value="left" name="hand" class="options__input">
+                                    <input id="ooo" type="radio" value="ooo" name="ooo" class="options__input">
                                     <label for="ooo" class="options__label"><span>ООО</span></label>
                                 </div>
                             </div>
                         </div>
                         <div class="form__item">
                             <div class="checkbox">
-                                <input id="skin" type="checkbox" name="agreement" class="checkbox__input">
+                                <input id="skin" type="checkbox" name="skin" class="checkbox__input">
                                 <label for="skin" class="checkbox__label">Работа с кожей</label>
                             </div>
                         </div>
                         <div class="form__item">
                             <div class="form__label form__title">Работаете</div>
                             <div class="checkbox checkbox-work">
-                                <input id="home" type="checkbox" name="agreement" class="checkbox__input">
+                                <input id="home" type="checkbox" name="home" class="checkbox__input">
                                 <label for="home" class="checkbox__label">У клиента на дому</label>
                             </div>
                             <div class="checkbox  checkbox-work">
-                                <input id="plant"  type="checkbox" name="agreement" class="checkbox__input">
+                                <input id="plant"  type="checkbox" name="plant" class="checkbox__input">
                                 <label for="plant" class="checkbox__label">В мастерской</label>
                             </div>
                         </div>
@@ -85,8 +92,9 @@
                             <textarea name="message" id="formMessage" class="form__input"></textarea>
                         </div>
                     </div>
+                    <button type="submit" class="form__button">Отправить заявку</button>
                 </form>
-                <button type="submit" class="form__button">Отправить заявку</button>
+
 
                 <div class="form__button-confirm">Заявка отправлена</div>
 

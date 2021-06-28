@@ -72,6 +72,7 @@ li{
 }
 .page{
     flex: 1 1 auto;
+    padding: 0 10px;
 }
 $maxWidthContainer: 1270;
 
@@ -156,7 +157,7 @@ $maxWidthContainer: 1270;
         flex-wrap: wrap;
         align-items: center;
         &-left,&-right{
-            flex: 0 1 1fr;
+            flex: 0 1 100%;
         }
         &-left{
             margin-right: 1px;

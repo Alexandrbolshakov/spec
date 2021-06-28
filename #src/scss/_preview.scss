@@ -13,7 +13,7 @@
             font-family: 'Montserrat';
             @include adaptive-font(40, 24);
             font-weight: 700;
-            color: $blue;
+            // color: $blue;
         }
         &-subtitle{
             color: #000;
